@@ -12,7 +12,7 @@ import { useState } from "react";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 const projects = [
   {
     num: "01",
@@ -100,7 +100,7 @@ const Work = () => {
   const [project, setProject] = useState(projects[0]);
   console.log(project);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperClass) => {
     const activeIndex = swiper.activeIndex;
     setProject(projects[activeIndex]);
   };
@@ -135,7 +135,7 @@ const Work = () => {
             <Link href={project.live}>
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                  <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
                     <BsArrowUpRight className=" text-white text-3xl group-hover:text-primary" />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -147,7 +147,7 @@ const Work = () => {
             <Link href={project.githubFrontend}>
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
-                  <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                  <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
                     <BsGithub className=" text-white text-3xl group-hover:text-primary" />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -160,7 +160,7 @@ const Work = () => {
               <Link href={project.githubBackend}>
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                    <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
                       <BsGithub className=" text-white text-3xl group-hover:text-primary" />
                     </TooltipTrigger>
                     <TooltipContent>

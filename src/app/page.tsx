@@ -2,6 +2,7 @@ import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import { FileDown } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,7 +34,10 @@ export default function Home() {
                 size="lg"
                 className="uppercase items-center gap-2 bg-primary"
               >
-                <span>Download</span>
+                <Link href="https://drive.google.com/file/d/1EgOmBVnF1CU4mt0By6QHC-8TG0TJjPRc/view?usp=sharing">
+                  <span>Download</span>
+                </Link>
+
                 <FileDown className="ml-2" />
               </Button>
 
