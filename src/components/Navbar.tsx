@@ -21,6 +21,10 @@ const links = [
     name: "contact",
     path: "/contact",
   },
+  {
+    name: "blogs",
+    path: "/blogs",
+  },
 ];
 const Navbar = () => {
   const pathname = usePathname();
